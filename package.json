@@ -1,0 +1,25 @@
+{
+  "name": "aws_labmda_image_processing",
+  "version": "1.0.0",
+  "description": "AWS Lambda functions for processing images(resizes, scaling, etc..)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wecudosinc/aws_labmda_image_processing.git"
+  },
+  "author": "WecudosInc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wecudosinc/aws_labmda_image_processing/issues"
+  },
+  "homepage": "https://github.com/wecudosinc/aws_labmda_image_processing#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "aws-sdk": "^2.3.3",
+    "gm": "^1.22.0",
+    "urlencode": "^1.1.0"
+  }
+}
