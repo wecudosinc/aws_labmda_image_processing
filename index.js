@@ -95,15 +95,15 @@ exports.handler = function(event, context) {
             })();
 
             gm_object
-              .toBuffer('jpg', function(err, buffer) {
+              .toBuffer('PNG', function(err, buffer) {
                 if (err) {
                   callback(err);
                 }
                 else {
                   var obj = config;
-                  obj.contentType = 'image/jpeg';
+                  obj.contentType = 'image/png';
                   obj.data = buffer;
-                  obj.dstKey = imageName + '/' + config.postfix + '.' + 'jpg';
+                  obj.dstKey = imageName + '/' + config.postfix + '.png';
                   callback(null, obj);
                 }
               });
